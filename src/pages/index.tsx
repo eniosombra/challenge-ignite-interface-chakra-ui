@@ -1,11 +1,11 @@
-import { Heading, Text } from '@chakra-ui/layout'
+import { Text } from '@chakra-ui/layout'
+
+import { Header } from '../components/Header'
 
 export default function Home() {
   return (
     <>
-      <Heading color="app.text">
-        5 Continentes, infinitas possibilidades.
-      </Heading>
+      <Header />
       <Text align="center" fontSize={36}>
         Vamos nessa?
       </Text>
