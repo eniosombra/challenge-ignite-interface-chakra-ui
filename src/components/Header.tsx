@@ -13,7 +13,7 @@ export function Header() {
   return (
     <>
       <Box>
-        <Image src="/images/banner.svg" alt="TESTE" w="100%" />
+        <Image src="/images/banner.svg" alt="banner" w="100%" />
         <Box pos="absolute" top={['2', '4', '16']} left={['5', '12', '90']}>
           <Heading
             color="app.title"
