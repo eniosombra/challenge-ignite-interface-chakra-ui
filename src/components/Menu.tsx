@@ -1,4 +1,4 @@
-import { Box, Flex, Image, Text } from '@chakra-ui/react'
+import { GridItem, Image, SimpleGrid, Text } from '@chakra-ui/react'
 
 export function Menu() {
   const menus = [
@@ -10,15 +10,15 @@ export function Menu() {
   ]
 
   return (
-    <Flex justify="space-around">
+    <SimpleGrid columns={[null, 2, 3, 5]} spacing={5}>
       {menus.map((menu) => (
-        <Box key={menu.name} align="center">
+        <GridItem key={menu.name} align="center">
           <Image src={`/images/${menu.image}`} alt={menu.name} />
-          <Text mt={5} fontWeight="semibold" fontSize="24">
+          <Text mt={5} fontWeight="semibold" fontSize={[null, '18', '24']}>
             {menu.name}
           </Text>
-        </Box>
+        </GridItem>
       ))}
-    </Flex>
+    </SimpleGrid>
   )
 }
