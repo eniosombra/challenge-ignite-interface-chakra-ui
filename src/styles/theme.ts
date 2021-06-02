@@ -4,7 +4,8 @@ export const theme = extendTheme({
   colors: {
     app: {
       title: '#F5F8FA',
-      info: '#DADADA'
+      info: '#DADADA',
+      heading: '#47585B'
     }
   },
   fonts: {
