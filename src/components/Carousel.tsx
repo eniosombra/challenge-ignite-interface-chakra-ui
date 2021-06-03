@@ -19,12 +19,12 @@ export function Carousel() {
     {
       title: 'América do Sul',
       description: 'Possui a maior biodiversidade do mundo.',
-      image: 'europa.png'
+      image: 'south-america.png'
     },
     {
       title: 'Ásia',
       description: 'Continente do mundo de maior território.',
-      image: 'europa.png'
+      image: 'asia.png'
     },
     {
       title: 'África',
@@ -34,41 +34,43 @@ export function Carousel() {
     {
       title: 'Oceania',
       description: ' É conhecida como o "Novíssimo Mundo"',
-      image: 'europa.png'
+      image: 'oceania.png'
     }
   ]
 
   return (
-    <Box align="center">
+    <Box align="center" mb={8}>
       <Divider height={1} width={90} bg="app.heading" m="14" />
       <Text fontSize={36}>Vamos nessa?</Text>
       <Text fontSize={36}>Então escolha seu continente</Text>
 
-      <Swiper
-        navigation={true}
-        pagination={true}
-        effect={'cube'}
-        grabCursor={true}
-      >
-        {continents.map(continent => (
-          <SwiperSlide key={continent.title}>
-            <Flex
-              bgImage={`/images/${continent.image}`}
-              h={450}
-              align="center"
-              justify="center"
-              direction="column"
-            >
-              <Heading color="app.title" mb={4}>
-                {continent.title}
-              </Heading>
-              <Text color="app.info" fontSize="lg">
-                {continent.description}
-              </Text>
-            </Flex>
-          </SwiperSlide>
-        ))}
-      </Swiper>
+      <Box maxW={1240}>
+        <Swiper
+          navigation={true}
+          pagination={true}
+          effect={'cube'}
+          grabCursor={true}
+        >
+          {continents.map(continent => (
+            <SwiperSlide key={continent.title}>
+              <Flex
+                bgImage={`/images/${continent.image}`}
+                h={450}
+                align="center"
+                justify="center"
+                direction="column"
+              >
+                <Heading color="app.title" mb={4}>
+                  {continent.title}
+                </Heading>
+                <Text color="app.info" fontSize="lg">
+                  {continent.description}
+                </Text>
+              </Flex>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </Box>
     </Box>
   )
 }
