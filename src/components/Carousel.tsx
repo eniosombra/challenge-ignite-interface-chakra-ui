@@ -1,48 +1,18 @@
 import { Box, Flex, Divider, Text, Heading } from '@chakra-ui/react'
-import SwiperCore, { Navigation, Pagination, EffectCube } from 'swiper/core'
 import { Swiper, SwiperSlide } from 'swiper/react'
-
+import SwiperCore, { Navigation, Pagination, EffectCube } from 'swiper/core'
 SwiperCore.use([Navigation, Pagination, EffectCube])
 
-export function Carousel() {
-  const continents = [
-    {
-      title: 'Europa',
-      description: 'O continente mais antigo.',
-      image: 'europe.png'
-    },
-    {
-      title: 'América do Norte',
-      description: 'É o segundo maior continente do mundo.',
-      image: 'north-america.png'
-    },
-    {
-      title: 'América do Sul',
-      description: 'Possui a maior biodiversidade do mundo.',
-      image: 'south-america.png'
-    },
-    {
-      title: 'Ásia',
-      description: 'Continente do mundo de maior território.',
-      image: 'asia.png'
-    },
-    {
-      title: 'África',
-      description: 'A fauna é riquíssima e possui os maiores animais da terra.',
-      image: 'africa.png'
-    },
-    {
-      title: 'Oceania',
-      description: ' É conhecida como o "Novíssimo Mundo"',
-      image: 'oceania.png'
-    }
-  ]
+import continents from '../assets/continents.json'
 
+export function Carousel() {
   return (
-    <Box align="center" mb={8}>
+    <Box align="center" mx={4} my={8}>
       <Divider height={1} width={90} bg="app.heading" m="14" />
       <Text fontSize={36}>Vamos nessa?</Text>
-      <Text fontSize={36}>Então escolha seu continente</Text>
+      <Text fontSize={36} mb={8}>
+        Então escolha seu continente
+      </Text>
 
       <Box maxW={1240}>
         <Swiper
