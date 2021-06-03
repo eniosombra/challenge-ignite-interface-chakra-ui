@@ -1,13 +1,14 @@
-import { Box, Flex, Divider, Text, Heading } from '@chakra-ui/react'
+import { Box, Divider, Text } from '@chakra-ui/react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import SwiperCore, { Navigation, Pagination, EffectCube } from 'swiper/core'
 SwiperCore.use([Navigation, Pagination, EffectCube])
 
 import continents from '../assets/continents.json'
+import { Banner } from './Banner'
 
 export function Carousel() {
   return (
-    <Box align="center" mx={4} my={8}>
+    <Box align="center" mx={4} my={12}>
       <Divider height={1} width={90} bg="app.heading" m="14" />
       <Text fontSize={36}>Vamos nessa?</Text>
       <Text fontSize={36} mb={8}>
@@ -23,20 +24,11 @@ export function Carousel() {
         >
           {continents.map(continent => (
             <SwiperSlide key={continent.title}>
-              <Flex
-                bgImage={`/images/${continent.image}`}
-                h={450}
-                align="center"
-                justify="center"
-                direction="column"
-              >
-                <Heading color="app.title" mb={4}>
-                  {continent.title}
-                </Heading>
-                <Text color="app.info" fontSize="lg">
-                  {continent.description}
-                </Text>
-              </Flex>
+              <Banner
+                title={continent.title}
+                image={continent.image}
+                description={continent.description}
+              />
             </SwiperSlide>
           ))}
         </Swiper>
