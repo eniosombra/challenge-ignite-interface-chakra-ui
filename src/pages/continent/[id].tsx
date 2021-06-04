@@ -1,3 +1,4 @@
+import { GetServerSideProps } from 'next'
 import Link from 'next/link'
 import {
   Box,
@@ -10,12 +11,24 @@ import {
 } from '@chakra-ui/react'
 import { ChevronLeftIcon } from '@chakra-ui/icons'
 
-import cities from '../../assets/cities.json'
 import { QuantityBox } from '../../components/QuantityBox'
 import { CityCard } from '../../components/CityCard'
 import React from 'react'
+import { api } from '../../services/api'
 
-export default function Continent() {
+type City = {
+  name: string
+  country: string
+  image: string
+  country_flag: string
+  continent_id: string
+}
+
+type ContinentProps = {
+  cities: City[]
+}
+
+export default function Continent({ cities }: ContinentProps) {
   return (
     <Box align="center" h="100vh">
       <Flex maxW={1240} align="center" justify="space-between" p={3}>
@@ -63,4 +76,15 @@ export default function Continent() {
       </Box>
     </Box>
   )
+}
+
+export const getServerSideProps: GetServerSideProps = async request => {
+  const { id } = request.query
+  const { data } = await api.get(`/continent/${id}`)
+
+  return {
+    props: {
+      cities: data
+    }
+  }
 }
