@@ -1,4 +1,5 @@
-import { Flex, Text, Heading, Link } from '@chakra-ui/react'
+import Link from 'next/link'
+import { Flex, Text, Heading, Box } from '@chakra-ui/react'
 
 type BannerProps = {
   title: string
@@ -15,18 +16,15 @@ export function Banner({ title, image, description }: BannerProps) {
       justify="center"
       direction="column"
     >
-      <Link
-        href="/continent"
-        params={{
-          test: 'TESTE'
-        }}
-      >
-        <Heading color="app.title" mb={4}>
-          {title}
-        </Heading>
-        <Text color="app.info" fontSize="lg">
-          {description}
-        </Text>
+      <Link href="/continent">
+        <Box _hover={{ cursor: 'pointer' }}>
+          <Heading color="app.title" mb={4}>
+            {title}
+          </Heading>
+          <Text color="app.info" fontSize="lg">
+            {description}
+          </Text>
+        </Box>
       </Link>
     </Flex>
   )
