@@ -3,10 +3,20 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import SwiperCore, { Navigation, Pagination, EffectCube } from 'swiper/core'
 SwiperCore.use([Navigation, Pagination, EffectCube])
 
-import continents from '../assets/continents.json'
 import { Banner } from './Banner'
 
-export function Carousel() {
+type Continent = {
+  id: string
+  name: string
+  description: string
+  image: string
+}
+
+type CarouselProps = {
+  continents: Continent[]
+}
+
+export function Carousel({ continents }: CarouselProps) {
   return (
     <Box align="center" mx={4} my={12}>
       <Divider height={1} width={90} bg="app.heading" m="14" />
