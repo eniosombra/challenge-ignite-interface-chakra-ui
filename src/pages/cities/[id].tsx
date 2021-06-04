@@ -90,14 +90,13 @@ export default function Cities({ cities, continent }: CitiesProps) {
 
 export const getServerSideProps: GetServerSideProps = async request => {
   const { id } = request.query
-  const { data: city_data } = await api.get(`/cities/${id}`)
-  const { data: continents_data } = await api.get(`/continents/${id}`)
+  const { data: cityData } = await api.get(`/cities/${id}`)
+  const { data: continentsData } = await api.get(`/continents/${id}`)
 
-  console.log(continents_data)
   return {
     props: {
-      cities: city_data,
-      continent: continents_data[0] ?? []
+      cities: cityData,
+      continent: continentsData
     }
   }
 }
