@@ -27,8 +27,12 @@ type City = {
 type Continent = {
   id: string
   name: string
-  description: string
+  title: string
   image: string
+  description: string
+  quantity_countries: string
+  quantity_languages: string
+  quantity_cities: string
 }
 
 type CitiesProps = {
@@ -54,16 +58,14 @@ export default function Cities({ cities, continent }: CitiesProps) {
 
       <Grid maxW={1240} templateColumns="repeat(6, 1fr)" gap={3} p={3}>
         <GridItem colSpan={3}>
-          <Text align="justify">
-            A Europa é, por convenção, um dos seis continentes do mundo.
-            Compreendendo a península ocidental da Eurásia, a Europa geralmente
-            divide-se da Ásia a leste pela divisória de águas dos montes Urais,
-            o rio Ural, o mar Cáspio, o Cáucaso, e o mar Negro a sudeste
-          </Text>
+          <Text align="justify">{continent.description}</Text>
         </GridItem>
-        <QuantityBox quantity={50} label="países" />
-        <QuantityBox quantity={60} label="línguas" />
-        <QuantityBox quantity={27} label="cidades +100" />
+        <QuantityBox quantity={continent.quantity_countries} label="países" />
+        <QuantityBox quantity={continent.quantity_languages} label="línguas" />
+        <QuantityBox
+          quantity={continent.quantity_cities}
+          label="cidades +100"
+        />
       </Grid>
 
       <Box maxW={1240} p={3}>
