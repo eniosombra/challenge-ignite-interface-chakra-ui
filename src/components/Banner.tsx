@@ -17,7 +17,7 @@ export function Banner({ id, name, image, description }: BannerProps) {
       justify="center"
       direction="column"
     >
-      <Link href={`/continent/${id}`}>
+      <Link href={`/cities/${id}`}>
         <Box _hover={{ cursor: 'pointer' }}>
           <Heading color="app.title" mb={4}>
             {name}

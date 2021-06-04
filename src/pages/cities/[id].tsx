@@ -24,11 +24,11 @@ type City = {
   continent_id: string
 }
 
-type ContinentProps = {
+type CitiesProps = {
   cities: City[]
 }
 
-export default function Continent({ cities }: ContinentProps) {
+export default function Cities({ cities }: CitiesProps) {
   return (
     <Box align="center" h="100vh">
       <Flex maxW={1240} align="center" justify="space-between" p={3}>
@@ -80,7 +80,7 @@ export default function Continent({ cities }: ContinentProps) {
 
 export const getServerSideProps: GetServerSideProps = async request => {
   const { id } = request.query
-  const { data } = await api.get(`/continent/${id}`)
+  const { data } = await api.get(`/cities/${id}`)
 
   return {
     props: {
