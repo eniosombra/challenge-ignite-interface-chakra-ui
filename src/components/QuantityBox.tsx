@@ -1,7 +1,7 @@
 import { GridItem, Text } from '@chakra-ui/react'
 
 type QuantityBoxProps = {
-  quantity: number
+  quantity: string
   label: string
 }
 export function QuantityBox({ quantity, label }: QuantityBoxProps) {

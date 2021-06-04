@@ -5,10 +5,10 @@ type BannerProps = {
   id: string
   name: string
   image: string
-  description: string
+  title: string
 }
 
-export function Banner({ id, name, image, description }: BannerProps) {
+export function Banner({ id, name, image, title }: BannerProps) {
   return (
     <Flex
       bgImage={image}
@@ -23,7 +23,7 @@ export function Banner({ id, name, image, description }: BannerProps) {
             {name}
           </Heading>
           <Text color="app.info" fontSize="lg">
-            {description}
+            {title}
           </Text>
         </Box>
       </Link>

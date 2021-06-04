@@ -8,7 +8,7 @@ import { Banner } from './Banner'
 type Continent = {
   id: string
   name: string
-  description: string
+  title: string
   image: string
 }
 
@@ -38,7 +38,7 @@ export function Carousel({ continents }: CarouselProps) {
                 id={continent.id}
                 name={continent.name}
                 image={continent.image}
-                description={continent.description}
+                title={continent.title}
               />
             </SwiperSlide>
           ))}
