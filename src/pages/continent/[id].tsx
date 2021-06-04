@@ -10,9 +10,9 @@ import {
 } from '@chakra-ui/react'
 import { ChevronLeftIcon } from '@chakra-ui/icons'
 
-import cities from '../assets/cities.json'
-import { QuantityBox } from '../components/QuantityBox'
-import { CityCard } from '../components/CityCard'
+import cities from '../../assets/cities.json'
+import { QuantityBox } from '../../components/QuantityBox'
+import { CityCard } from '../../components/CityCard'
 import React from 'react'
 
 export default function Continent() {
