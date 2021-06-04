@@ -2,24 +2,25 @@ import Link from 'next/link'
 import { Flex, Text, Heading, Box } from '@chakra-ui/react'
 
 type BannerProps = {
-  title: string
+  id: string
+  name: string
   image: string
   description: string
 }
 
-export function Banner({ title, image, description }: BannerProps) {
+export function Banner({ id, name, image, description }: BannerProps) {
   return (
     <Flex
-      bgImage={`/images/${image}`}
+      bgImage={image}
       h={450}
       align="center"
       justify="center"
       direction="column"
     >
-      <Link href="/continent">
+      <Link href={`/continent/${id}`}>
         <Box _hover={{ cursor: 'pointer' }}>
           <Heading color="app.title" mb={4}>
-            {title}
+            {name}
           </Heading>
           <Text color="app.info" fontSize="lg">
             {description}
