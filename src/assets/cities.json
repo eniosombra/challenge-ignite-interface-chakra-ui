@@ -3,30 +3,35 @@
     "name": "Londres",
     "country": "Reino Unido",
     "image": "/images/londres.png",
-    "country_flag": "/images/inglaterra-flag.png"
+    "country_flag": "/images/inglaterra-flag.png",
+    "continent_id": "europe"
   },
   {
     "name": "Paris",
     "country": "França",
     "image": "/images/paris.png",
-    "country_flag": "/images/franca-flag.png"
+    "country_flag": "/images/franca-flag.png",
+    "continent_id": "europe"
   },
   {
     "name": "Roma",
     "country": "Itália",
     "image": "/images/roma.png",
-    "country_flag": "/images/italia-flag.png"
+    "country_flag": "/images/italia-flag.png",
+    "continent_id": "europe"
   },
   {
     "name": "Praga",
     "country": "República Tcheca",
     "image": "/images/praga.png",
-    "country_flag": "/images/tcheca-flag.png"
+    "country_flag": "/images/tcheca-flag.png",
+    "continent_id": "europe"
   },
   {
     "name": "Amsterdã",
     "country": "Holanda",
     "image": "/images/amsterda.png",
-    "country_flag": "/images/holanda-flag.png"
+    "country_flag": "/images/holanda-flag.png",
+    "continent_id": "europe"
   }
 ]
