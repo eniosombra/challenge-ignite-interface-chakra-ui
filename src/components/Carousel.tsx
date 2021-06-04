@@ -23,9 +23,10 @@ export function Carousel() {
           grabCursor={true}
         >
           {continents.map(continent => (
-            <SwiperSlide key={continent.title}>
+            <SwiperSlide key={continent.id}>
               <Banner
-                title={continent.title}
+                id={continent.id}
+                name={continent.name}
                 image={continent.image}
                 description={continent.description}
               />
