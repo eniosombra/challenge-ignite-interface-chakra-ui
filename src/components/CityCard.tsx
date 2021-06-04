@@ -1,17 +1,38 @@
-import { Box, Image, Text } from '@chakra-ui/react'
+import { Box, Flex, Image, Text } from '@chakra-ui/react'
 
 type CityCardProps = {
   country: string
   city: string
+  image: string
+  country_flag: string
 }
-export function CityCard({ country, city }: CityCardProps) {
+export function CityCard({
+  country,
+  city,
+  image,
+  country_flag
+}: CityCardProps) {
   return (
-    <Box w={256} h={279} bg="purple.300" borderRadius={4} align="left" mb={4}>
-      <Image src="/images/londres.png" alt="city" mb={8} />
-      <Text mx={6} fontWeight="semibold">
-        {city}
-      </Text>
-      <Text mx={6}>{country}</Text>
+    <Box
+      w={256}
+      h={279}
+      mb={4}
+      borderRadius={4}
+      align="left"
+      border="1px"
+      borderColor="app.highlight"
+    >
+      <Image src={image} alt="city" mb={6} />
+
+      <Flex align="center" justify="space-between">
+        <Box mx={6}>
+          <Text fontWeight="semibold" fontSize={20}>
+            {city}
+          </Text>
+          <Text>{country}</Text>
+        </Box>
+        <Image src={country_flag} alt="flag" mr={6} />
+      </Flex>
     </Box>
   )
 }
