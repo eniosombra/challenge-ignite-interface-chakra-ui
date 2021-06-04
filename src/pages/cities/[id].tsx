@@ -24,11 +24,19 @@ type City = {
   continent_id: string
 }
 
-type CitiesProps = {
-  cities: City[]
+type Continent = {
+  id: string
+  name: string
+  description: string
+  image: string
 }
 
-export default function Cities({ cities }: CitiesProps) {
+type CitiesProps = {
+  cities: City[]
+  continent: Continent
+}
+
+export default function Cities({ cities, continent }: CitiesProps) {
   return (
     <Box align="center" h="100vh">
       <Flex maxW={1240} align="center" justify="space-between" p={3}>
@@ -42,7 +50,7 @@ export default function Cities({ cities }: CitiesProps) {
         <Text />
       </Flex>
 
-      <Image src="/images/continents/europe.png" w="100%" />
+      <Image src={continent.image} w="100%" />
 
       <Grid maxW={1240} templateColumns="repeat(6, 1fr)" gap={3} p={3}>
         <GridItem colSpan={3}>
@@ -80,11 +88,14 @@ export default function Cities({ cities }: CitiesProps) {
 
 export const getServerSideProps: GetServerSideProps = async request => {
   const { id } = request.query
-  const { data } = await api.get(`/cities/${id}`)
+  const { data: city_data } = await api.get(`/cities/${id}`)
+  const { data: continents_data } = await api.get(`/continents/${id}`)
 
+  console.log(continents_data)
   return {
     props: {
-      cities: data
+      cities: city_data,
+      continent: continents_data[0] ?? []
     }
   }
 }
