@@ -3,36 +3,36 @@
     "id": "europe",
     "name": "Europa",
     "description": "O continente mais antigo.",
-    "image": "/images/europe.png"
+    "image": "/images/continents/europe.png"
   },
   {
     "id": "north-america",
     "name": "América do Norte",
     "description": "É o segundo maior continente do mundo.",
-    "image": "/images/north-america.png"
+    "image": "/images/continents/north-america.png"
   },
   {
     "id": "south-america",
     "name": "América do Sul",
     "description": "Possui a maior biodiversidade do mundo.",
-    "image": "/images/south-america.png"
+    "image": "/images/continents/south-america.png"
   },
   {
     "id": "asia",
     "name": "Ásia",
     "description": "Continente do mundo de maior território.",
-    "image": "/images/asia.png"
+    "image": "/images/continents/asia.png"
   },
   {
     "id": "africa",
     "name": "África",
     "description": "A fauna é riquíssima e possui os maiores animais da terra.",
-    "image": "/images/africa.png"
+    "image": "/images/continents/africa.png"
   },
   {
     "id": "oceania",
     "name": "Oceania",
     "description": "É conhecida como o 'Novíssimo Mundo'",
-    "image": "/images/oceania.png"
+    "image": "/images/continents/oceania.png"
   }
 ]

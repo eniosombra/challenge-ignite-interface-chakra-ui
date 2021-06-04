@@ -1,37 +1,52 @@
 [
   {
     "name": "Londres",
+    "image": "/images/cities/londres.png",
     "country": "Reino Unido",
-    "image": "/images/londres.png",
-    "country_flag": "/images/inglaterra-flag.png",
+    "country_flag": "/images/flags/inglaterra.png",
     "continent_id": "europe"
   },
   {
     "name": "Paris",
+    "image": "/images/cities/paris.png",
     "country": "França",
-    "image": "/images/paris.png",
-    "country_flag": "/images/franca-flag.png",
+    "country_flag": "/images/flags/franca.png",
     "continent_id": "europe"
   },
   {
     "name": "Roma",
+    "image": "/images/cities/roma.png",
     "country": "Itália",
-    "image": "/images/roma.png",
-    "country_flag": "/images/italia-flag.png",
+    "country_flag": "/images/flags/italia.png",
     "continent_id": "europe"
   },
   {
     "name": "Praga",
+    "image": "/images/cities/praga.png",
     "country": "República Tcheca",
-    "image": "/images/praga.png",
-    "country_flag": "/images/tcheca-flag.png",
+    "country_flag": "/images/flags/tcheca.png",
     "continent_id": "europe"
   },
   {
     "name": "Amsterdã",
+    "image": "/images/cities/amsterda.png",
     "country": "Holanda",
-    "image": "/images/amsterda.png",
-    "country_flag": "/images/holanda-flag.png",
+    "country_flag": "/images/flags/holanda.png",
     "continent_id": "europe"
+  },
+
+  {
+    "name": "Rio de Janeiro",
+    "image": "/images/cities/rio-de-janeiro.png",
+    "country": "Brasil",
+    "country_flag": "/images/flags/brasil.png",
+    "continent_id": "south-america"
+  },
+  {
+    "name": "Natal",
+    "image": "/images/cities/natal.png",
+    "country": "Brasil",
+    "country_flag": "/images/flags/brasil.png",
+    "continent_id": "south-america"
   }
 ]

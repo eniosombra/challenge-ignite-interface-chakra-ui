@@ -42,7 +42,7 @@ export default function Continent({ cities }: ContinentProps) {
         <Text />
       </Flex>
 
-      <Image src="/images/europe.png" w="100%" />
+      <Image src="/images/continents/europe.png" w="100%" />
 
       <Grid maxW={1240} templateColumns="repeat(6, 1fr)" gap={3} p={3}>
         <GridItem colSpan={3}>
