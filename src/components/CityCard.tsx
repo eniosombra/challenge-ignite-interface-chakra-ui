@@ -22,7 +22,7 @@ export function CityCard({
       border="1px"
       borderColor="app.highlight"
     >
-      <Image src={image} alt="city" mb={6} />
+      <Image src={image} alt="city" mb={6} w={256} h={173} />
 
       <Flex align="center" justify="space-between">
         <Box mx={6}>
