@@ -5,7 +5,8 @@ export const theme = extendTheme({
     app: {
       title: '#F5F8FA',
       info: '#DADADA',
-      heading: '#47585B'
+      heading: '#47585B',
+      highlight: '#FFBA08'
     }
   },
   fonts: {

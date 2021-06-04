@@ -11,7 +11,7 @@ export function Menu() {
 
   return (
     <SimpleGrid columns={[null, 2, 3, 5]} spacing={5}>
-      {menus.map((menu) => (
+      {menus.map(menu => (
         <GridItem key={menu.name} align="center">
           <Image src={`/images/${menu.image}`} alt={menu.name} />
           <Text mt={5} fontWeight="semibold" fontSize={[null, '18', '24']}>
