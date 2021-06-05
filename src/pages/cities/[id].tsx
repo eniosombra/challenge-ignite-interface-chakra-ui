@@ -54,7 +54,19 @@ export default function Cities({ cities, continent }: CitiesProps) {
         <Text />
       </Flex>
 
-      <Image src={continent.image} w="100%" />
+      <Box mb={36}>
+        <Image src={continent.image} w="100%" />
+        <Heading
+          maxW={1240}
+          ml={4}
+          my={-24}
+          fontSize={[null, 36, 48]}
+          align="left"
+          color="app.title"
+        >
+          {continent.name}
+        </Heading>
+      </Box>
 
       <Grid maxW={1240} templateColumns="repeat(6, 1fr)" gap={3} p={3}>
         <GridItem colSpan={3}>
