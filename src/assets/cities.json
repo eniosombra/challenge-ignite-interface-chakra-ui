@@ -51,7 +51,7 @@
   {
     "name": "Santiago",
     "image": "/images/cities/santiago.png",
-    "country": "Argentina",
+    "country": "Chile",
     "country_flag": "/images/flags/chile.png",
     "continent_id": "south-america"
   },
@@ -61,5 +61,33 @@
     "country": "Brasil",
     "country_flag": "/images/flags/brasil.png",
     "continent_id": "south-america"
+  },
+  {
+    "name": "New York",
+    "image": "/images/cities/new-york.png",
+    "country": "United States",
+    "country_flag": "/images/flags/eua.png",
+    "continent_id": "north-america"
+  },
+  {
+    "name": "Xangai",
+    "image": "/images/cities/xangai.png",
+    "country": "China",
+    "country_flag": "/images/flags/china.png",
+    "continent_id": "asia"
+  },
+  {
+    "name": "Johanesburgo",
+    "image": "/images/cities/johanesburgo.png",
+    "country": "África do Sul",
+    "country_flag": "/images/flags/africa-do-sul.png",
+    "continent_id": "africa"
+  },
+  {
+    "name": "Camberra",
+    "image": "/images/cities/camberra.png",
+    "country": "Austrália",
+    "country_flag": "/images/flags/australia.png",
+    "continent_id": "oceania"
   }
 ]

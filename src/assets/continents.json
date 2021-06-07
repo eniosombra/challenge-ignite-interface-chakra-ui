@@ -10,16 +10,6 @@
     "quantity_cities": "27"
   },
   {
-    "id": "north-america",
-    "name": "América do Norte",
-    "title": "É o segundo maior continente do mundo.",
-    "image": "/images/continents/north-america.png",
-    "description": "A América do Norte é um subcontinente que compreende a porção setentrional do continente americano. Existem duas formas de classificar esse continente: a primeira considera que a América do Norte é apenas a parte mais setentrional da América, separada da América Central na fronteira entre o México e a Guatemala.",
-    "quantity_countries": "45",
-    "quantity_languages": "67",
-    "quantity_cities": "23"
-  },
-  {
     "id": "south-america",
     "name": "América do Sul",
     "title": "Possui a maior biodiversidade do mundo.",
@@ -28,6 +18,16 @@
     "quantity_countries": "33",
     "quantity_languages": "29",
     "quantity_cities": "201"
+  },
+  {
+    "id": "north-america",
+    "name": "América do Norte",
+    "title": "É o segundo maior continente do mundo.",
+    "image": "/images/continents/north-america.png",
+    "description": "A América do Norte é um subcontinente que compreende a porção setentrional do continente americano. Existem duas formas de classificar esse continente: a primeira considera que a América do Norte é apenas a parte mais setentrional da América, separada da América Central na fronteira entre o México e a Guatemala.",
+    "quantity_countries": "45",
+    "quantity_languages": "67",
+    "quantity_cities": "23"
   },
   {
     "id": "asia",
