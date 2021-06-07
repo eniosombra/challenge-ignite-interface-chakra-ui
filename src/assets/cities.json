@@ -34,12 +34,25 @@
     "country_flag": "/images/flags/holanda.png",
     "continent_id": "europe"
   },
-
   {
     "name": "Rio de Janeiro",
     "image": "/images/cities/rio-de-janeiro.png",
     "country": "Brasil",
     "country_flag": "/images/flags/brasil.png",
+    "continent_id": "south-america"
+  },
+  {
+    "name": "Buenos Aires",
+    "image": "/images/cities/buenos-aires.png",
+    "country": "Argentina",
+    "country_flag": "/images/flags/argentina.png",
+    "continent_id": "south-america"
+  },
+  {
+    "name": "Santiago",
+    "image": "/images/cities/santiago.png",
+    "country": "Argentina",
+    "country_flag": "/images/flags/chile.png",
     "continent_id": "south-america"
   },
   {
